@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+
     <meta charset="UTF-8">
     <title>Exercice JavaScript</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
   </head>
   <body>
+
     <header>
       <h1>Exercice JavaScript : un panier d'achats</h1>
     </header>
+
     <main>
+
       <section>
+
         <h2>Acheter des fruits</h2>
+
         <table class="bandes">
+
           <caption>Nos tarifs de l’automne 2021</caption>
           <thead>
             <tr>
@@ -38,14 +47,21 @@
               <td>15 lbs</td>
             </tr>
           </tbody>
+
         </table>
-        <button>Acheter un sac de pommes</button>
-        <button>Acheter un sac de poires</button>
-        <button>Acheter un sac de prunes</button>
+
+        <button onclick="AjouterPanierPomme()">Acheter un sac de pommes</button>
+        <button onclick="AjouterPanierPoire()">Acheter un sac de poires</button>
+        <button onclick="AjouterPanierPrune()">Acheter un sac de prunes</button>
+
       </section>
+
       <section>
+
         <h2>Vos achats</h2>
+
         <table>
+
           <caption>Facture détaillée</caption>
           <thead>
             <tr>
@@ -83,8 +99,12 @@
               <td class="prix" id="prixTotal">0.00</td>
             </tr>
           </tfoot>
+
         </table>
+
       </section>
+
     </main>
+
   </body>
 </html>
